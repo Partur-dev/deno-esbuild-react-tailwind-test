@@ -1,0 +1,24 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-net --allow-env --allow-read --allow-write --allow-run main.ts true",
+    "build": "deno run --allow-net --allow-env --allow-read --allow-write --allow-run main.ts false"
+  },
+  "importMap": "import_map.json",
+  "compilerOptions": {
+    "lib": ["dom", "deno.window"],
+    "jsx": "react"
+  },
+  "lint": {
+    "files": {
+      "exclude": ["dist"]
+    }
+  },
+  "fmt": {
+    "files": {
+      "exclude": ["dist"]
+    },
+    "options": {
+      "singleQuote": true
+    }
+  }
+}
